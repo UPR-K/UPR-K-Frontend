@@ -1,0 +1,23 @@
+ion-grid {display: flex;
+  justify-content: space-between;
+  margin: 10px 10px 10px 10px;
+    ion-row {
+      ion-col {
+        margin-bottom: 3%;
+        margin-top: 3%;
+        ion-card {
+            margin: 3%;
+            min-height: 100px;
+            min-width: 100px;
+            height: 100%;}
+                        ion-note {
+                          margin-top : 20%;
+                          font-weight: 900;
+            
+                        }
+                                                ion-button{
+                                                  margin: 0%;
+                                                }
+      }
+}
+}

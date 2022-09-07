@@ -1,0 +1,42 @@
+<ion-header translucent="true">
+
+  <ion-toolbar >
+    <ion-buttons slot="start">
+      <ion-back-button text="" ></ion-back-button>
+    </ion-buttons>
+    <ion-title > Directorio </ion-title>
+  </ion-toolbar>
+
+</ion-header>
+
+<ion-content>
+
+  <div class="class-buscador">
+    <ion-searchbar [(ngModel)]="name" (ionChange)="searchUser($event)" placeholder="Buscar" animated
+      (click)="MostrarLista()">
+    </ion-searchbar>
+  </div>
+
+  <div *ngIf="!mostrarImagen" class="info">
+    <img src="../../../assets/fotos/Data analytics _Outline.png" alt="">
+    <h2>Busca la información deseada</h2>
+    <p> Aquí encontrarás la información más relevante de los profesores estudiantes y trabajadores</p>
+  </div>
+
+  <ion-list>
+    <ion-item *ngFor="let i of counts">
+
+      <ion-avatar slot="start">
+        <img src="../../../assets/icon/contactoazul.png" alt="">
+      </ion-avatar>
+      <ion-label text-wrap style='margin-left:20px'>
+        <h3>{{data[i].displayname[0]}}</h3>
+     <!--    <h6>{{data[i].mail[0]}}</h6> -->
+        <h5>{{data[i].physicaldeliveryofficename[0]}}</h5>
+      </ion-label>
+
+    </ion-item>
+
+  </ion-list>
+
+</ion-content>

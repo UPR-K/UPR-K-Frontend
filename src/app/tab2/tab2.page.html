@@ -1,0 +1,20 @@
+<app-header (selectedsegment)="ChangeSegment($event)"></app-header>
+
+<ion-content class="content" [fullscreen]="true">
+
+  <ion-header collapse="condense" class="ion-no-border">
+    <ion-toolbar>
+      <div class="titulo">
+        <ion-title class="categorytitle">{{selectedsegment}}</ion-title>
+      </div>
+    </ion-toolbar>
+  </ion-header>
+
+  <app-notices *ngIf="selectedsegment == 'Noticias'">
+
+  </app-notices>
+  <app-maintenance *ngIf="selectedsegment == 'Eventos'"></app-maintenance>
+  <app-maintenance *ngIf="selectedsegment == 'Investigaciones'"></app-maintenance>
+  
+
+</ion-content>

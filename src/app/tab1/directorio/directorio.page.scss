@@ -1,0 +1,33 @@
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+ion-searchbar{
+    background-repeat: #85c28f;
+    border-radius: 10px;
+    align-items: center;
+
+}
+.info{
+    text-align: center;
+img{
+    background-size: 10px;
+    vertical-align: text-bottom;
+}
+}
+
+.class-buscador{
+    margin-top: 5%;
+  padding-left: 7%;
+  padding-right: 7%;
+}
+.list{
+    border-bottom-left-radius: 60px;
+    border-bottom-right-radius: 60px;
+}
+
+ion-list{
+    padding: 30px;
+}
